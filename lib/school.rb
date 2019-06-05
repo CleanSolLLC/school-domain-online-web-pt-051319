@@ -1,10 +1,10 @@
 class School
+  roster = {}
   attr_accessor :school
   attr_reader :grade
 
   def initialize(school_name)
     @school = school_name
-    @roster = {}
   end
 
   def add_student(student_name, grade_num)
