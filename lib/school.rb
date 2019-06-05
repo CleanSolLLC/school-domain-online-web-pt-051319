@@ -3,33 +3,32 @@ require 'pry'
 class School
   #attr_accessor :school, :grade, :roster
 
-  def initialize(school_name)
-    @school_name = school_name
+  def initialize(school)
+    @school = school
     roster={}
-    binding.pry
   end
 
-  def roster=(school_roster)
-    @roster = school_roster
+  def roster=(roster)
+    @roster = roster
   end
 
   def roster
     @roster
   end
 
-  def add_student(student_name, grade_num)
-    @student_name = student_name
-    @grade_num = grade_num
+  def add_student(name, grade)
+    @name = name
+    @grade = grade
 
     if @roster.empty?
-      @roster[grade_num] = []
-      @roster[grade_num] << student_name
+      @roster[grade] = []
+      @roster[grade] << student_name
 
-    elsif @roster.has_key? && roster[grade_num] == grade_num
+    elsif @roster.has_key? && roster[grade] == grade
       @roster[grade_num] << student_name
 
     else
-      @roster[grade_num] = student_name
+      @roster[grade] = name
     end
 
   end
