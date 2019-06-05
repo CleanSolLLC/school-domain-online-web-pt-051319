@@ -22,10 +22,10 @@ class School
 
     if @roster.empty?
       @roster[grade] = []
-      @roster[grade] << student_name
+      @roster[grade] << name
 
     elsif @roster.has_key? && roster[grade] == grade
-      @roster[grade_num] << student_name
+      @roster[grade] << name
 
     else
       @roster[grade] = name
