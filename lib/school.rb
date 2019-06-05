@@ -38,7 +38,7 @@ class School
   end
 
   def sort
-    @roster.sort(k,v)
+    @roster.sort.to_h
   end
 
 end
