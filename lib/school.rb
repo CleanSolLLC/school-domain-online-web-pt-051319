@@ -39,6 +39,7 @@ class School
 
   def sort
     @roster.each_pair{|k,v| v.sort}
+    binding.pry
     #@roster.sort.to_h
   end
 
