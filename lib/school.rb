@@ -38,7 +38,8 @@ class School
   end
 
   def sort
-    @roster.sort.to_h
+    @roster.each_pair{|k,v| v.sort}
+    #@roster.sort.to_h
   end
 
 end
