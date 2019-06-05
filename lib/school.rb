@@ -26,7 +26,7 @@ class School
 
     elsif @roster.has_key? && @roster[grade] == grade
       @roster[grade] << name
-
+      binding.pry
     else
       @roster[grade] = name
     end
