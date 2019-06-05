@@ -37,4 +37,8 @@ class School
     @roster.fetch(num)
   end
 
+  def sort
+    @roster[name].sort
+  end
+
 end
