@@ -38,7 +38,7 @@ class School
   end
 
   def sort
-    @roster.flatten.sort
+    @roster.sort!
   end
 
 end
