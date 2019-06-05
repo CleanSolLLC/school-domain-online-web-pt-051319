@@ -34,9 +34,7 @@ class School
   end
 
   def grade(num)
-    @roster.each do |x|
-      x.fetch(num)
-    end
+    @roster.fetch(num)
   end
 
 end
