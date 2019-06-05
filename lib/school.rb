@@ -38,8 +38,7 @@ class School
   end
 
   def sort
-    @roster.each {|k,v|}
-    binding.pry
+    @roster.sort(|k,v|)
   end
 
 end
