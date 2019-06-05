@@ -38,7 +38,8 @@ class School
   end
 
   def sort
-    @roster.each { |x| x.sort }
+    @roster.to_array
+    binding.pry
   end
 
 end
