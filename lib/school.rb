@@ -14,7 +14,7 @@ class School
   def add_student(student_name, grade_num)
     @student_name = student_name
     @grade_num = grade_num
-
+    binding.pry
     if @roster.empty?
       @roster[grade_num] = []
       @roster[grade_num] << student_name
