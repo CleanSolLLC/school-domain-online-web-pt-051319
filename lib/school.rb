@@ -7,6 +7,7 @@ class School
     @school = school_name
     def roster
       roster = {}
+      binding.pry
     end
   end
 
