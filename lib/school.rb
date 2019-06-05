@@ -1,4 +1,4 @@
-include 'pry'
+require 'pry'
 
 class School
   roster = {}
