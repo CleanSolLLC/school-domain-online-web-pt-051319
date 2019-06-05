@@ -24,7 +24,7 @@ class School
       @roster[grade] = []
       @roster[grade] << name
 
-    elsif @roster.has_key? && roster[grade] == grade
+    elsif @roster.has_key? && @roster[grade] == grade
       @roster[grade] << name
 
     else
