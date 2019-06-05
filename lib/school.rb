@@ -1,12 +1,13 @@
 require 'pry'
 
 class School
-  attr_accessor :school, :grade, :roster
+  #attr_accessor :school, :grade, :roster
 
   def initialize(school_name)
     @school = school_name
     def roster
       roster = {}
+      @roster = roster
     end
   end
 
@@ -14,15 +15,15 @@ class School
     @student_name = student_name
     @grade_num = grade_num
 
-    if school.roster.empty?
-      school.roster[grade_num] = []
-      school.roster[grade_num] << student_name
+    if @roster.empty?
+      @roster[grade_num] = []
+      @roster[grade_num] << student_name
 
-    elsif school.roster.has_key? && roster[grade_num] == grade_num
-      school.roster[grade_num] << student_name
+    elsif @roster.has_key? && roster[grade_num] == grade_num
+      @roster[grade_num] << student_name
 
     else
-      school.roster[grade_num] = student_name
+      @roster[grade_num] = student_name
     end
 
   end
