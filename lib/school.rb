@@ -1,7 +1,9 @@
+include 'pry'
+
 class School
   roster = {}
-  attr_accessor :school
-  attr_reader :grade
+  #attr_accessor :school
+  #attr_reader :grade
 
   def initialize(school_name)
     @school = school_name
