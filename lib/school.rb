@@ -5,11 +5,13 @@ class School
 
   def initialize(school_name)
     @school_name = school_name
-    roster = {}
+    def roster
+      roster = {}
+      @roster = roster
+    end
   end
 
   def roster=(school_roster)
-    binding.pry
     @roster = school_roster
   end
 
