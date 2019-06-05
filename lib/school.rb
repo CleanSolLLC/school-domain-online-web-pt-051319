@@ -34,8 +34,9 @@ class School
   end
 
   def grade(num)
-    binding.pry
-    @name
+    @roster.each do |x|
+      x.fetch(num)
+    end
   end
 
 end
