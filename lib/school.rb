@@ -34,6 +34,7 @@ class School
   end
 
   def grade(num)
+    binding.pry
     @name
   end
 
