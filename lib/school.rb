@@ -18,7 +18,7 @@ class School
     if @roster == nil
       @roster[grade_num] = []
       @roster[grade_num] << student_name
-        binding.pry
+      
     elsif @roster.has_key? && roster[grade_num] == grade_num
       @roster[grade_num] << student_name
 
