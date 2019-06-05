@@ -38,7 +38,7 @@ class School
   end
 
   def sort
-    @roster.to_array
+    @roster.to_a
     binding.pry
   end
 
