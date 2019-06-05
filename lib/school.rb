@@ -6,6 +6,7 @@ class School
   def initialize(school_name)
     @school_name = school_name
     roster={}
+    binding.pry
   end
 
   def roster=(school_roster)
