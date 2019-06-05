@@ -4,18 +4,24 @@ class School
   #attr_accessor :school, :grade, :roster
 
   def initialize(school_name)
-    @school = school_name
-    def roster
-      roster = {}
-      @roster = roster
+    @school_name = school_name
+    roster = {}
     end
   end
+
+  def roster=(school_roster)
+    @roster = school_roster
+  end
+
+  def roster
+    @roster
+  end  
 
   def add_student(student_name, grade_num)
     @student_name = student_name
     @grade_num = grade_num
 
-    if @roster == nil
+    if @roster.empty?
       @roster[grade_num] = []
       @roster[grade_num] << student_name
 
