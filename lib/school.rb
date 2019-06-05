@@ -38,7 +38,11 @@ class School
   end
 
   def sort
-    @roster.sort.to_h
+    sorted ={}
+    @roster.each do |k,v|
+      sorted[k] = v.sort
+    end
+    sorted
   end
 
 end
