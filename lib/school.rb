@@ -14,11 +14,11 @@ class School
   def add_student(student_name, grade_num)
     @student_name = student_name
     @grade_num = grade_num
-    binding.pry
-    if @roster.empty?
+  
+    if @roster == nil
       @roster[grade_num] = []
       @roster[grade_num] << student_name
-
+        binding.pry
     elsif @roster.has_key? && roster[grade_num] == grade_num
       @roster[grade_num] << student_name
 
